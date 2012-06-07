@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'osc-tcp-example' target in the 'osc-tcp-example' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+	#import <VVOSC/VVOSC.h>
+#endif

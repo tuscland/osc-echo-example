@@ -1,0 +1,234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		912BBDBA15809CF500DA1735 /* OSCServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 912BBDB915809CF500DA1735 /* OSCServerRequest.m */; };
+		912BBDBD15809D3900DA1735 /* OSCTCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 912BBDBC15809D3900DA1735 /* OSCTCPServer.m */; };
+		912BBDD715809D9F00DA1735 /* OSCTCPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 912BBDD615809D9F00DA1735 /* OSCTCPConnection.m */; };
+		91DA002F157E04490077B42B /* TCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DA002E157E04490077B42B /* TCPServer.m */; };
+		91DAFF5B157DF4190077B42B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		91DAFF5C157DF4190077B42B /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9197735B152DD4F3009C1573 /* VVBasics.framework */; };
+		91DAFF5D157DF4190077B42B /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9197735C152DD4F3009C1573 /* VVOSC.framework */; };
+		91DAFF63157DF4300077B42B /* osc-echo-example.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAFF50157DF3F30077B42B /* osc-echo-example.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32A70AAB03705E1F00C91783 /* osc-tcp-example_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "osc-tcp-example_Prefix.pch"; sourceTree = "<group>"; };
+		912BBDB815809CF500DA1735 /* OSCServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCServerRequest.h; sourceTree = "<group>"; };
+		912BBDB915809CF500DA1735 /* OSCServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCServerRequest.m; sourceTree = "<group>"; };
+		912BBDBB15809D3900DA1735 /* OSCTCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCTCPServer.h; sourceTree = "<group>"; };
+		912BBDBC15809D3900DA1735 /* OSCTCPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCTCPServer.m; sourceTree = "<group>"; };
+		912BBDD515809D9F00DA1735 /* OSCTCPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCTCPConnection.h; sourceTree = "<group>"; };
+		912BBDD615809D9F00DA1735 /* OSCTCPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCTCPConnection.m; sourceTree = "<group>"; };
+		9197735B152DD4F3009C1573 /* VVBasics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVBasics.framework; path = /Library/Frameworks/VVBasics.framework; sourceTree = "<absolute>"; };
+		9197735C152DD4F3009C1573 /* VVOSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVOSC.framework; path = /Library/Frameworks/VVOSC.framework; sourceTree = "<absolute>"; };
+		91DA002D157E04490077B42B /* TCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPServer.h; sourceTree = "<group>"; };
+		91DA002E157E04490077B42B /* TCPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPServer.m; sourceTree = "<group>"; };
+		91DAFF50157DF3F30077B42B /* osc-echo-example.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "osc-echo-example.m"; sourceTree = "<group>"; };
+		91DAFF61157DF4190077B42B /* osc-echo-example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "osc-echo-example"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91DAFF5A157DF4190077B42B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DAFF5B157DF4190077B42B /* Foundation.framework in Frameworks */,
+				91DAFF5C157DF4190077B42B /* VVBasics.framework in Frameworks */,
+				91DAFF5D157DF4190077B42B /* VVOSC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* osc-tcp-example */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = "osc-tcp-example";
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				32A70AAB03705E1F00C91783 /* osc-tcp-example_Prefix.pch */,
+				91DA002D157E04490077B42B /* TCPServer.h */,
+				91DA002E157E04490077B42B /* TCPServer.m */,
+				912BBDB815809CF500DA1735 /* OSCServerRequest.h */,
+				912BBDB915809CF500DA1735 /* OSCServerRequest.m */,
+				912BBDD515809D9F00DA1735 /* OSCTCPConnection.h */,
+				912BBDD615809D9F00DA1735 /* OSCTCPConnection.m */,
+				912BBDBB15809D3900DA1735 /* OSCTCPServer.h */,
+				912BBDBC15809D3900DA1735 /* OSCTCPServer.m */,
+				91DAFF50157DF3F30077B42B /* osc-echo-example.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9197735B152DD4F3009C1573 /* VVBasics.framework */,
+				9197735C152DD4F3009C1573 /* VVOSC.framework */,
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91DAFF61157DF4190077B42B /* osc-echo-example */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91DAFF57157DF4190077B42B /* osc-echo-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91DAFF5E157DF4190077B42B /* Build configuration list for PBXNativeTarget "osc-echo-example" */;
+			buildPhases = (
+				91DAFF58157DF4190077B42B /* Sources */,
+				91DAFF5A157DF4190077B42B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "osc-echo-example";
+			productInstallPath = "$(HOME)/bin";
+			productName = "osc-tcp-example";
+			productReference = 91DAFF61157DF4190077B42B /* osc-echo-example */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "osc-echo-example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* osc-tcp-example */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91DAFF57157DF4190077B42B /* osc-echo-example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91DAFF58157DF4190077B42B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DAFF63157DF4300077B42B /* osc-echo-example.m in Sources */,
+				91DA002F157E04490077B42B /* TCPServer.m in Sources */,
+				912BBDBA15809CF500DA1735 /* OSCServerRequest.m in Sources */,
+				912BBDBD15809D3900DA1735 /* OSCTCPServer.m in Sources */,
+				912BBDD715809D9F00DA1735 /* OSCTCPConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB927908733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB927A08733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		91DAFF5F157DF4190077B42B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "osc-tcp-example_Prefix.pch";
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "osc-echo-example";
+			};
+			name = Debug;
+		};
+		91DAFF60157DF4190077B42B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_PREFIX_HEADER = "osc-tcp-example_Prefix.pch";
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "osc-echo-example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "osc-echo-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927908733DD40010E9CD /* Debug */,
+				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91DAFF5E157DF4190077B42B /* Build configuration list for PBXNativeTarget "osc-echo-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91DAFF5F157DF4190077B42B /* Debug */,
+				91DAFF60157DF4190077B42B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
